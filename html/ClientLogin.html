@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Login </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <!--   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script> -->
+
+    <script type="text/javascript" src="..\script\ClientLogin.js"></script>
+    <link type="text/css" rel="stylesheet" href="..\css\webcss.css">
+    <link type="text/css" rel="stylesheet" href="..\css\menu.css">
+    <style>
+        body {
+            background-image: url("images/website-background-277a.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body ng-app = "myApp">
+<!-- header  desktop header-->
+<header id="header" role="banner" class="row hidden-phone">
+    <div class="logo"><img src="images/p2p-lending-1-640x305.jpg" height="100px" width="250px" style="margin-top: 0px" alt="Financial Planning"></div>
+    <nav id="nav" role="navigation" class="clearfix" style="width: 950px">
+        <div id="mainNav" class="row main">
+            <ul>
+
+                <li id="mainNav_0"><a href="" >About Us</a></li>
+
+                <li id="mainNav_1"><a href="" >Investments &amp; Services</a></li>
+
+                <li id="mainNav_3"><a href="Portfolio.html" >my Portfolio</a></li>
+
+                <li id="mainNav_4"><a href="" >my Account</a></li>
+
+
+            </ul>
+        </div>
+        <div class="site-header--top-bar">
+            <ul class="site-header--additional-links">
+
+
+                <li id="accountAccessDefault" class="top-link"><a href="PersonalLoan/html/ClientLogin.html">Client Login</a></li>
+
+                <li>
+                    <div class="site-region-selector" aria-label="Select your country/language from the list below">
+                        <a href="home.html" class="helper__reader">Home</a>
+
+                    </div>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+    </nav>
+</header>
+<!--  class="col-md-6 col-md-offset-3" -->
+<div align="center"  ng-controller="myController">
+    <h2>Login</h2>
+    <form name="form" ng-submit="login()" >
+        <div>
+        <div>
+            <label> Username: </label><br>
+            <input type="text" id="username" ng-model="user"  placeholder="username" required />
+
+        </div>
+        <div>
+            <label>Password: </label><br>
+            <input type="password" id="Password" ng-model="pw" placeholder="password" required/>
+            </div>
+            <br>
+            <button type="submit" id="login">Login</button>
+            <a href="/register.html" ng-click="register()"> register </a>
+
+
+            </div>
+
+    </form>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+fieldset
+{ 
+  font-size:15px;
+  width: 20%;
+  color: purple;
+  text-align: center;
+  border-style: solid;
+  border-color:black;
+  font-style: italic;
+ 
+}
+#abc{ 
+	background-color: rgba(165, 42, 42, 0.6);
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.nav{
+    float: left;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+.menu{
+    float: left;
+    overflow: hidden;
+    padding: 25px;
+
+}
+
+#menu-bar{
+    background-color: chartreuse;
+}
+

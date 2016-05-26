@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="..\css\webcss.css">
+    <link type="text/css" rel="stylesheet" href="..\css\menu.css">
+    <script type="text/javascript" src="..\script\Invest.js"></script>
+    <style>
+        body {
+            background-image: url("images/website-background-277a.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- header
+
+     -->
+    <!-- desktop header -->
+    <header id="header" role="banner" class="row hidden-phone">
+        <div style="height: 150px">
+        <div class="logo"><a href="/index.html"  title="Financial Planning" tabindex="1"><img src="images/p2p-lending-1-640x305.jpg" height="100px" width="250px" style="margin-top: 0px" alt="Financial Planning"></a></div>
+        <nav id="nav" role="navigation" class="clearfix" style="width: 950px">
+            <div id="mainNav" class="row main">
+                <ul>
+
+                    <li id="mainNav_0"><a href="aboutus.html" >About Us</a></li>
+
+                    <li id="mainNav_1"><a href="" >Investments &amp; Services</a></li>
+
+                    <li id="mainNav_3"><a href="Portfolio.html" >my Portfolio</a></li>
+
+                    <li id="mainNav_4"><a href="ClientLogin.html" >my Account</a></li>
+
+
+                </ul>
+            </div>
+            <div class="site-header--top-bar">
+                <ul class="site-header--additional-links">
+
+
+                    <li id="accountAccessDefault" class="top-link"><a href="ClientLogin.html">Client Login</a></li>
+
+                    <li>
+                        <div class="site-region-selector" aria-label="Select your country/language from the list below">
+                            <a href="home.html" class="helper__reader">Home</a>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </nav>
+            </div>
+    </header>
+    <main style="height: 600px">
+    <div id="main" align="center" >
+
+         <div>
+         <span  id="main1" >
+
+                 <h3>Want to Deposit money for Investment??</h3>
+              <input type="number" id="amt" placeholder="Enter the Amount" required/> <br><br>
+             <form id="myForm">
+                 <div>
+                     <table style="border: 1px solid" id="myTable">
+                         <thead><tr>
+
+                         <td>Risk Factors </td>
+                             <td>Percentage % </td>
+                             <td>Amount</td>
+                            </tr>
+                         </thead>
+                         <tbody>
+                         <tr>
+
+                              <td><select id="Risk">
+                             <option value="0"> High Risk</option>
+                             <option value="1">medium Risk</option>
+                             <option value="2">Low Risk</option></select>  </td>
+                         <td><select id="percent">
+                             <option value="100"> 100</option>
+                             <option value="1">90</option>
+                             <option value="2">80</option>
+                             <option value="3">70</option>
+                             <option value="4">60</option>
+                             <option value="5">50</option>
+                             <option value="6">40</option>
+                             <option value="7">30</option>
+                             <option value="8">20</option>
+                             <option value="9">10</option>
+                         </select> </td>
+                             <td id="Amont"> </td>
+                            </tr>
+                         </tbody>
+                     </table>
+
+                     </div>
+                    <br>
+                        <button value="calculate" onclick="validate()">Calculate</button>
+
+                 </form>
+
+             </span>
+             </div>
+
+    </div>
+    </main>
+    <footer style="height: 100px">
+        <div>
+
+            </div>
+    </footer>
+
+</body>
+</html>
